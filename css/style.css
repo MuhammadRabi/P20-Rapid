@@ -148,6 +148,10 @@ nav {
   background-color: var(--bg-clr-one);
 }
 
+.services img {
+  width: 100px;
+}
+
 .cards-container {
   display: flex;
   justify-content: space-around;
@@ -282,23 +286,26 @@ img {
   position: fixed;
   bottom: 25px;
   right: 35px;
-  padding: 5px 15px;
-  font-size: 32px;
-  border-radius: 3px;
-  background-color: var(--fg-clr-two);
+  width: 40px;
+  height: 40px;
+  padding: 9px 3px;
+  line-height: 1;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--fg-clr-one);
   color: #fff;
   cursor: pointer;
-  display: none;
+  visibility: hidden;
   transition: 0.5s ease-in-out;
 }
 
 .scroll-to-top:hover {
-  background-color: var(--fg-clr-one);
   transform: scale(1.05);
 }
 
-.scroll-to-top .show-scroll {
-  display: block;
+.show-scroll {
+  visibility: visible;
 }
 
 /*  scroll-to-top button */
