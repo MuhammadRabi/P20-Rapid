@@ -212,15 +212,15 @@ nav {
 }
 
 .question {
-  padding: 30px 50px 5px;
+  padding: 15px 50px 5px;
 }
 
 .question-head p {
   letter-spacing: 1px;
 }
 
-.question button {
-  border: 1px solid red;
+.minus-icon {
+  display: none;
 }
 
 .answer-btns {
@@ -229,10 +229,30 @@ nav {
   margin-left: 70%;
 }
 
+.question-body {
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+
 .question-body p {
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
 }
+
+/* collapsed answer logic */
+
+.show-answer .question-body {
+  display: block;
+}
+
+.show-answer .minus-icon {
+  display: inline-block;
+}
+
+.show-answer .plus-icon {
+  display: none;
+}
+
 /* end FAQ */
 
 /* Team section */

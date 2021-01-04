@@ -21,3 +21,26 @@ function goUp() {
     behavior: "smooth",
   });
 }
+
+// FAQ section functionality
+
+const questionBox = document.querySelectorAll(".question");
+
+// inside the loop
+
+questionBox.forEach((question) => {
+  let answerBtn = question.querySelector(".answer-btns");
+  // eventlistener
+  answerBtn.addEventListener("click", dropAnswer);
+
+  // function
+  function dropAnswer() {
+    // loop to close any answer opened when open an answer
+    questionBox.forEach((item) => {
+      if (item !== question) {
+        item.classList.remove("show-answer");
+      }
+    });
+    question.classList.toggle("show-answer");
+  }
+});
