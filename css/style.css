@@ -1,3 +1,4 @@
+/* my V 1.0 global rules */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -94,6 +95,8 @@ body {
   text-align: center;
   margin: auto;
 }
+/* my V 1.0 global rules */
+
 /* start navbar */
 
 nav {
