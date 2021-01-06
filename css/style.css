@@ -457,10 +457,10 @@ footer ul a:hover {
 }
 
 .footer-social-icons i {
-  width: 30px;
-  height: 30px;
-  margin: 5px 1px;
-  padding: 10px 3px;
+  width: 37px;
+  height: 37px;
+  margin: 25px 1px;
+  padding: 13px 3px;
   font-size: 16px;
   text-align: center;
   line-height: 13px;
@@ -488,7 +488,7 @@ footer ul a:hover {
 textarea {
   width: 100%;
   margin: 7px 0;
-  padding: 6px 10px;
+  padding: 10px 10px;
   border: 1px solid #e7e5e5;
 }
 
