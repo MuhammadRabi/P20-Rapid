@@ -94,6 +94,7 @@ body {
   text-align: center;
   margin: auto;
 }
+/* start navbar */
 
 nav {
   display: flex;
@@ -120,6 +121,8 @@ nav {
   color: var(--fg-clr-one);
   text-decoration: none;
 }
+/* end navbar */
+
 .hero-text {
   position: absolute;
   width: 40%;
