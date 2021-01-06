@@ -107,14 +107,18 @@ nav {
 
 .nav-links a {
   display: block;
-  font-size: 16px;
-  margin: 0 9px;
-  padding: 0;
+  font-size: 14px;
+  margin: 0px 9px;
+  padding: 0px;
   color: var(--fg-clr-two);
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+  text-transform: uppercase;
 }
 
 .nav-links a:hover {
   color: var(--fg-clr-one);
+  text-decoration: none;
 }
 .hero-text {
   position: absolute;
