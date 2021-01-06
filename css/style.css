@@ -195,32 +195,45 @@ body {
   background-color: var(--bg-clr-one);
 }
 
-.services img {
-  width: 100px;
-}
-
-.cards-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.card {
+.services .card {
   background-color: #fff;
-  border-radius: 2px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
-.services .img-container {
-  /* width: 100px;
-  height: 100px;*/
+.services .card:hover {
+  transform: scale(1.05);
+}
+
+.services .card:hover h4 {
+  color: var(--fg-clr-three);
+}
+.services img {
+  width: 50px;
   margin: auto;
 }
 
+.services h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.services .card p {
+  font-size: 14px;
+  padding: 1px 25px;
+  line-height: 1.7;
+}
 /* end services */
 
 /* call-to-action */
 .call-to-action {
-  background-color: var(--fg-clr-two);
+  background-color: var(--fg-clr-three);
   color: #fff;
   padding: 50px 5px;
 }
@@ -232,6 +245,7 @@ body {
 
 .call-to-action button {
   border: 3px solid #fff;
+  background-color: var(--fg-clr-three);
   font-weight: 900;
 }
 
@@ -246,6 +260,7 @@ body {
 }
 
 /* FAQ */
+
 .section-main-text {
   margin: auto;
   width: 50%;
@@ -260,10 +275,12 @@ body {
 }
 
 .question {
-  padding: 15px 50px 5px;
+  padding: 15px 40px 5px;
+  border-bottom: 1px solid #f6f4f4;
 }
 
 .question-head p {
+  font-size: 18px;
   letter-spacing: 1px;
 }
 
@@ -274,20 +291,24 @@ body {
 .answer-btns {
   color: #000;
   background-color: transparent;
-  margin-left: 70%;
+  margin-left: 90%;
 }
 
 .question-body {
+  transition: 2s ease-in-out;
   display: none;
-  transition: 0.5s ease-in-out;
 }
 
 .question-body p {
-  border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
+  transition: 3s ease-in-out;
 }
 
 /* collapsed answer logic */
+
+.show-answer .question-head p {
+  color: var(--fg-clr-one);
+}
 
 .show-answer .question-body {
   display: block;
@@ -318,12 +339,25 @@ img {
   margin-bottom: 25px;
 }
 
+.team-info h5 {
+  font-size: 16px;
+  font-weight: 900;
+  margin: 0;
+  padding: 6px;
+}
+
+.team-info p {
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-style: italic;
+}
+
 .img-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 20%;
+  height: 22%;
   text-align: center;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
@@ -332,8 +366,19 @@ img {
 }
 
 .team-image:hover .img-overlay {
-  height: 50%;
+  height: 35%;
 }
+
+.team .social-icons i {
+  padding: 0 2px;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+.team .social-icons i:hover {
+  color: var(--fg-clr-one);
+}
+
 /* end Team section*/
 
 /* start our clients section */
