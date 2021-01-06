@@ -1,5 +1,4 @@
 * {
-  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -54,11 +53,15 @@ header {
   background-size: cover;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
 .btn {
   border-color: transparent;
   font-size: 14px;
   padding: 7px 20px;
   border-radius: 3px;
+  background-color: var(--fg-clr-one);
   color: #fff;
   text-transform: capitalize;
   text-align: center;
@@ -69,6 +72,7 @@ header {
 
 .btn:hover {
   color: #fff;
+  background-color: var(--bg-clr-btn-hover);
 }
 
 :root {
@@ -333,14 +337,6 @@ img {
 
 /*  scroll-to-top button */
 
-/* start Footer */
-
-footer {
-  background-color: var(--bg-clr-one);
-  min-height: 100px;
-}
-/*End footer */
-
 /* pricing */
 
 .pricing .card {
@@ -413,3 +409,87 @@ footer {
   background-color: var(--bg-clr-btn-hover);
 }
 /*pricing */
+
+/* start Footer */
+
+footer {
+  color: var(--fg-clr-two);
+  font-size: 14px;
+  padding: 25px;
+  background-color: var(--bg-clr-one);
+}
+
+.copyrights {
+  background-color: #fff;
+}
+
+footer h5 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 0;
+}
+
+footer p {
+  margin-bottom: 1px;
+}
+
+footer p:first-of-type {
+  line-height: 2.2;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  padding: 5px 0;
+}
+
+footer ul a {
+  color: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+footer ul a:hover {
+  color: var(--fg-clr-one);
+}
+
+.footer-social-icons i {
+  width: 30px;
+  height: 30px;
+  margin: 5px 1px;
+  padding: 10px 3px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 13px;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  color: #fff;
+  background-color: var(--fg-clr-one);
+}
+
+.footer-social-icons i:hover {
+  background-color: var(--bg-clr-btn-hover);
+}
+
+.newsletter input[type="email"] {
+  width: 63%;
+  margin: 5px 0;
+  padding: 6px 10px;
+  border: 1px solid #e7e5e5;
+}
+.newsletter input[type="submit"] {
+  width: 35%;
+  padding: 6px 1px;
+}
+.send-us input,
+textarea {
+  width: 100%;
+  margin: 7px 0;
+  padding: 6px 10px;
+  border: 1px solid #e7e5e5;
+}
+
+/*End footer */
