@@ -43,7 +43,7 @@ h6 {
 }
 
 section {
-  padding-bottom: 5rem;
+  padding: 2.5rem 0;
   margin-bottom: 2rem;
 }
 
@@ -82,7 +82,7 @@ body {
   --clr-four: linear-gradient(120deg, #dfe6e9, #656d70);
   --clr-five: linear-gradient(120deg, #ffeaa7, #f3aa21);
   --fg-clr-one: #1bb1dc;
-  --fg-clr-two: #2d2b46;
+  --fg-clr-two: #413e66;
   --fg-clr-three: #535074;
   --bg-clr-btn-hover: #1593b6;
   --bg-clr-one: #f5f8fd;
@@ -147,6 +147,37 @@ nav {
   top: 25%;
   right: 10%;
 }
+
+/* start about us section */
+
+.about-us h2 {
+  color: var(--fg-clr-two);
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.about-us i {
+  color: var(--fg-clr-one);
+}
+
+.about-us p {
+  margin-bottom: 35px;
+  line-height: 1.8;
+}
+
+.about-us li {
+  padding: 10px 5px;
+}
+
+.about-us img {
+  border: 9px solid #faf9f9;
+  transition: 0.5s ease-in-out;
+}
+
+.about-us img:hover {
+  transform: scale(1.01);
+}
+
+/* end about us section */
 
 /* services */
 .services {
@@ -213,6 +244,7 @@ nav {
 }
 
 .section-main-text h2 {
+  font-weight: 700;
   text-transform: uppercase;
 }
 
