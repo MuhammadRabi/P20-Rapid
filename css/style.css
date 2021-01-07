@@ -318,6 +318,42 @@ body {
 
 /* end our-portofolio section */
 
+/* start testimonials section */
+
+.testimonials img {
+  border-radius: 50%;
+  width: 120px;
+  float: left;
+  margin: 25px;
+}
+
+.testimonials-info {
+  text-transform: capitalize;
+  text-align: left;
+  padding: 50px;
+  margin: 0;
+}
+
+.testimonials h5 {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.testimonials h6 {
+  color: #b8b6b6;
+}
+
+.testimonials h5,
+.testimonials h6 {
+  padding: 5px 0;
+}
+
+.testimonials p {
+  font-style: italic;
+}
+
+/* end testimonials section */
+
 /* Team section */
 
 .team {
