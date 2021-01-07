@@ -1,3 +1,23 @@
+//scroll to section functionality
+
+// selection the anchor in navbar
+let navLinks = document.querySelectorAll(".nav-links a");
+
+// function for regeneration
+function scrollToSection(element) {
+  element.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      // smooth scroll from each clicked link to section
+      document.querySelector(e.target.dataset.link).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+}
+
+scrollToSection(navLinks);
+
 // scroll to top btn
 
 const scrollToTop = document.querySelector(".scroll-to-top");
