@@ -16,6 +16,7 @@ function scrollToSection(element) {
   });
 }
 
+// calling the function with desired target
 scrollToSection(navLinks);
 
 // scroll to top btn
