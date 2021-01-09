@@ -65,3 +65,54 @@ questionBox.forEach((question) => {
     question.classList.toggle("show-answer");
   }
 });
+
+// filterring image portofolio gallery
+const listItems = document.querySelectorAll(".portofolio-filter li");
+const allimages = document.querySelectorAll(".porto-image");
+
+function toggleActiveClass(li) {
+  listItems.forEach((item) => {
+    item.classList.remove("active");
+  });
+  li.classList.add("active");
+}
+
+function toggleMyImages(datasort) {
+  allimages.forEach((item) => {
+    if (datasort === "filtering-all") {
+      item.style.opacity = "1";
+    } else {
+      datasort === item.dataset.sort
+        ? (item.style.opacity = "1")
+        : (item.style.opacity = "0.1");
+    }
+  });
+}
+
+listItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    toggleActiveClass(item);
+    toggleMyImages(item.dataset.sort);
+  });
+});
+
+/*function toggleimages(dataSort) {
+  if (dataSort === "filtering-all") {
+    for (let i = 0; i < allimages.length; i++) {
+      allimages[i].style.opacity = "1";
+    }
+  } else {
+    for (let i = 0; i < allimages.length; i++)
+      allimages[i].dataset.sort === dataSort
+        ? (allimages[i].style.opacity = "1")
+        : (allimages[i].style.opacity = "0.1");
+  }
+}
+
+/*for (let i = 0; i < listItems.length; i++) {
+  listItems[i].addEventListener("click", function () {
+    toggleActiveClass(listItems[i]);
+    toggleimages(listItems[i].dataset.sort);
+  });
+}
+*/

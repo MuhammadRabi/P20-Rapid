@@ -284,7 +284,8 @@ body {
   cursor: pointer;
 }
 
-.portofolio-filter li:hover {
+.portofolio-filter li:hover,
+.portofolio-filter li.active {
   color: var(--fg-clr-one);
 }
 
