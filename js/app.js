@@ -78,13 +78,13 @@ function toggleActiveClass(li) {
 }
 
 function toggleMyImages(datasort) {
-  allimages.forEach((item) => {
+  allimages.forEach((image) => {
     if (datasort === "filtering-all") {
-      item.style.opacity = "1";
+      image.style.opacity = "1";
     } else {
-      datasort === item.dataset.sort
-        ? (item.style.opacity = "1")
-        : (item.style.opacity = "0.1");
+      datasort === image.dataset.sort
+        ? (image.style.opacity = "1")
+        : (image.style.opacity = "0.1");
     }
   });
 }
