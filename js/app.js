@@ -96,6 +96,19 @@ listItems.forEach((item) => {
   });
 });
 
+// swiper carousel
+
+var swiper = new Swiper(".swiper-container", {
+  autoplay: {
+    delay: 3000,
+  },
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 /*function toggleimages(dataSort) {
   if (dataSort === "filtering-all") {
     for (let i = 0; i < allimages.length; i++) {

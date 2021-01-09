@@ -31,7 +31,7 @@ h4,
 h5,
 h6 {
   text-transform: capitalize;
-  padding: 25px 5px 15px;
+  padding: 15px 5px;
 }
 
 .links-container {
@@ -240,6 +240,23 @@ body {
 }
 /* end services */
 
+/* why choose us section */
+
+.stats {
+  color: var(--fg-clr-three);
+}
+.stats span {
+  font-size: 54px;
+  font-weight: 800;
+}
+
+.stats p {
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+
+/* end why choose us section*/
+
 /* call-to-action */
 .call-to-action {
   background-color: var(--fg-clr-four);
@@ -353,6 +370,22 @@ body {
   font-style: italic;
 }
 
+/* starts swiper slider */
+
+.swiper-container {
+  min-height: 250px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--fg-clr-three);
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+/* ends swiper slider */
+
 /* end testimonials section */
 
 /* Team section */
@@ -417,6 +450,17 @@ img {
 .our-clients h2 {
   color: var(--fg-clr-two);
   text-align: center;
+}
+
+.client-logos img {
+  transform: scale(1.45);
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.client-logos img:hover {
+  opacity: 1;
 }
 
 /* start our clients section */

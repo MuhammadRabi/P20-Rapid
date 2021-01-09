@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- swiper slider css-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- font awesome-->
     <link
       rel="stylesheet"
@@ -22,6 +27,7 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Rapid Tempelate</title>
   </head>
@@ -218,7 +224,37 @@
     </section>
     <!-- end service section-->
     <!-- start why choose us section-->
-    <section class="why-choose-us"></section>
+    <section class="why-choose-us">
+      <div class="container">
+        <!-- stats part-->
+        <div class="row justify text-center">
+          <div class="col-lg-3 col-md-6">
+            <div class="stats">
+              <span>15</span>
+              <p>locations</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats">
+              <span>245</span>
+              <p>clients</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats">
+              <span>123</span>
+              <p>projects</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats">
+              <span>245</span>
+              <p>employees</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="call-to-action">
       <div class="container">
         <div class="row align-items-center">
@@ -482,7 +518,8 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-8 d-flex">
-            <img src="./img/testimonial-2.jpg" class="img-container" alt="" />
+            <!-- Swiper -->
+            <!--  <img src="./img/testimonial-2.jpg" class="img-container" alt="" />
             <div class="testimonial-info">
               <h5>sara anderson</h5>
               <h6>developer</h6>
@@ -491,6 +528,77 @@
                 Perspiciatis, beatae sit? Voluptatibs, ..testi-img placeat
                 repellat. Quaerat cum animi assumenda reprehenderit sit!
               </p>
+            </div>-->
+            <!-- Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./img/testimonial-2.jpg"
+                    class="img-container"
+                    alt=""
+                  />
+                  <div class="testimonial-info">
+                    <h5>sara anderson</h5>
+                    <h6>developer</h6>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis, beatae sit? Voluptatibs, ..testi-img placeat
+                      repellat. Quaerat cum animi assumenda reprehenderit sit!
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/testimonial-3.jpg"
+                    class="img-container"
+                    alt=""
+                  />
+                  <div class="testimonial-info">
+                    <h5>sara anderson</h5>
+                    <h6>developer</h6>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis, beatae sit? Voluptatibs, ..testi-img placeat
+                      repellat. Quaerat cum animi assumenda reprehenderit sit!
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/testimonial-4.jpg"
+                    class="img-container"
+                    alt=""
+                  />
+                  <div class="testimonial-info">
+                    <h5>sara anderson</h5>
+                    <h6>developer</h6>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis, beatae sit? Voluptatibs, ..testi-img placeat
+                      repellat. Quaerat cum animi assumenda reprehenderit sit!
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/testimonial-1.jpg"
+                    class="img-container"
+                    alt=""
+                  />
+                  <div class="testimonial-info">
+                    <h5>sara anderson</h5>
+                    <h6>developer</h6>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis, beatae sit? Voluptatibs, ..testi-img placeat
+                      repellat. Quaerat cum animi assumenda reprehenderit sit!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -583,10 +691,11 @@
     <!-- start our clients section-->
     <section class="our-clients">
       <div class="container">
-        <h2>our clients</h2>
+        <div class="section-main-text">
+          <h2>our clients</h2>
+        </div>
         <div class="client-logos">
-          <div class="row">
-            <div class="col-2"></div>
+          <div class="row justify-content-around">
             <div class="col-1">
               <img
                 src="./img/clients/client-1.png"
@@ -643,7 +752,6 @@
                 alt="client-08"
               />
             </div>
-            <div class="col-2"></div>
           </div>
         </div>
       </div>
@@ -1008,6 +1116,8 @@
     <div class="scroll-to-top">
       <span><i class="fas fa-angle-double-up"></i></span>
     </div>
+    <!-- swiper slider-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
