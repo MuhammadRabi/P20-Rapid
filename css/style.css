@@ -54,11 +54,6 @@ h6 {
 }
 
 :root {
-  --fg-clr-one: linear-gradient(120deg, #81ecec, #028582);
-  --clr-two: linear-gradient(120deg, #74b9ff, #0770c0);
-  --clr-three: linear-gradient(120deg, #fd79a8, #e72482);
-  --clr-four: linear-gradient(120deg, #dfe6e9, #656d70);
-  --clr-five: linear-gradient(120deg, #ffeaa7, #f3aa21);
   --fg-clr-one: #1bb1dc;
   --fg-clr-two: #413e66;
   --fg-clr-three: #535074;
@@ -70,6 +65,15 @@ h6 {
 section {
   padding: 1rem 0;
   margin: 1rem 0;
+}
+
+.navbar-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .section-main-text {
@@ -107,8 +111,7 @@ section {
 
 header {
   background-image: url("../img/intro-bg.jpg");
-  height: 100vh;
-  background-size: cover;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -117,7 +120,7 @@ header {
 nav {
   display: flex;
   align-items: center;
-  min-height: 60px;
+  padding: 12px 15px 8px;
   justify-content: space-between;
 }
 
@@ -126,6 +129,7 @@ nav {
   top: 0;
   right: 0;
   left: 0;
+  width: 100%;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
   background-color: #fff;
   z-index: 1000;
@@ -135,10 +139,72 @@ nav {
   display: flex;
 }
 
+/* responsive tweaks for navbar section*/
+
+@media (max-width: 991px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-white {
+    display: none;
+  }
+
+  .nav-toggle {
+    position: relative;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--fg-clr-three);
+    z-index: 10000;
+  }
+
+  .active.nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: var(--fg-clr-two);
+  }
+
+  .active.nav-links a {
+    font-size: 24px;
+    margin: 9px 13px;
+    color: #ffffff;
+    z-index: 1000;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-toggle {
+    z-index: -1;
+  }
+}
+
+.close-links {
+  display: none;
+}
+
+.active.nav-toggle .close-links {
+  color: #fff;
+  display: inline;
+}
+
+.active.nav-toggle .open-links {
+  display: none;
+}
+
 .nav-links a {
   display: block;
   font-size: 14px;
-  margin: -10px 13px;
+  margin: 0px 13px;
   padding: 0px;
   color: var(--fg-clr-two);
   font-weight: 600;
@@ -157,11 +223,14 @@ body {
 }
 
 .hero {
-  margin-top: 175px;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .hero-text {
   line-height: 1.9;
+  text-align: left;
 }
 
 .hero-text h1 {
