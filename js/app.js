@@ -43,6 +43,32 @@ function goUp() {
   });
 }
 
+// fixed navbar
+
+const navbar = document.getElementById("nav");
+
+window.addEventListener("scroll", fixedNav);
+
+function fixedNav() {
+  const scrollHeight = window.pageYOffset;
+  const navHeight = navbar.getBoundingClientRect().height;
+  scrollHeight > navHeight
+    ? navbar.classList.add("nav-white")
+    : navbar.classList.remove("nav-white");
+}
+
+/* navbar in small screens */
+
+const navigation = document.querySelector(".nav-links");
+const navToggle = document.querySelector(".nav-toggle");
+
+navToggle.addEventListener("click", showNav);
+
+function showNav() {
+  navigation.classList.toggle("active");
+  navToggle.classList.toggle("active");
+}
+
 // FAQ section functionality
 
 const questionBox = document.querySelectorAll(".question");
@@ -108,24 +134,3 @@ var swiper = new Swiper(".swiper-container", {
     clickable: true,
   },
 });
-
-/*function toggleimages(dataSort) {
-  if (dataSort === "filtering-all") {
-    for (let i = 0; i < allimages.length; i++) {
-      allimages[i].style.opacity = "1";
-    }
-  } else {
-    for (let i = 0; i < allimages.length; i++)
-      allimages[i].dataset.sort === dataSort
-        ? (allimages[i].style.opacity = "1")
-        : (allimages[i].style.opacity = "0.1");
-  }
-}
-
-/*for (let i = 0; i < listItems.length; i++) {
-  listItems[i].addEventListener("click", function () {
-    toggleActiveClass(listItems[i]);
-    toggleimages(listItems[i].dataset.sort);
-  });
-}
-*/
