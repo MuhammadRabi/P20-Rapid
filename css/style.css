@@ -180,6 +180,18 @@ nav {
     color: #ffffff;
     z-index: 1000;
   }
+  .close-links {
+    display: none;
+  }
+
+  .active.nav-toggle .close-links {
+    color: #fff;
+    display: inline;
+  }
+
+  .active.nav-toggle .open-links {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {
@@ -188,19 +200,9 @@ nav {
   }
 }
 
-.close-links {
-  display: none;
-}
-
-.active.nav-toggle .close-links {
+.nav-white .nav-toggle {
   color: #fff;
-  display: inline;
 }
-
-.active.nav-toggle .open-links {
-  display: none;
-}
-
 .nav-links a {
   display: block;
   font-size: 14px;
