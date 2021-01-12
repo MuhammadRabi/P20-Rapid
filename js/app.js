@@ -1,16 +1,20 @@
 //scroll to section functionality
-
+// smooth scroll from each clicked link to section
 // selection the anchor in navbar
-let navLinks = document.querySelectorAll(".nav-links a");
+const navLinks = document.querySelectorAll(".nav-links a");
+const navbar = document.getElementById("nav");
 
-// function for regeneration
 function scrollToSection(element) {
   element.forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
-      // smooth scroll from each clicked link to section
-      document.querySelector(e.target.dataset.link).scrollIntoView({
-        behavior: "smooth",
+      const navHeight = navbar.getBoundingClientRect().height;
+      const element = document.querySelector(e.target.dataset.link);
+      let position = element.offsetTop - navHeight;
+
+      window.scrollTo({
+        left: 0,
+        top: position,
       });
     });
   });
@@ -44,8 +48,6 @@ function goUp() {
 }
 
 // fixed navbar
-
-const navbar = document.getElementById("nav");
 
 window.addEventListener("scroll", fixedNav);
 
