@@ -136,3 +136,6 @@ var swiper = new Swiper(".swiper-container", {
     clickable: true,
   },
 });
+
+// wow js
+new WOW().init();

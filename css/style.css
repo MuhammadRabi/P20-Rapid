@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* my V 1.0 global rules */
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -45,6 +53,8 @@ h6 {
   text-align: center;
   letter-spacing: 2px;
   cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -71,8 +81,14 @@ section {
   width: 90vw;
   max-width: 1170px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -118,10 +134,17 @@ header {
 /* start navbar */
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  padding: 12px 15px 8px;
+  padding: 12px 15px 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-white {
@@ -130,12 +153,15 @@ nav {
   right: 0;
   left: 0;
   width: 100%;
+  -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
   background-color: #fff;
   z-index: 1000;
 }
 
 .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -166,9 +192,18 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     z-index: 999;
     background-color: var(--fg-clr-two);
@@ -176,7 +211,7 @@ nav {
 
   .active.nav-links a {
     font-size: 24px;
-    margin: 9px 13px;
+    margin: 9px 13px 5px;
     color: #ffffff;
     z-index: 1000;
   }
@@ -210,6 +245,8 @@ nav {
   padding: 0px;
   color: var(--fg-clr-two);
   font-weight: 600;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   text-transform: uppercase;
 }
@@ -226,6 +263,7 @@ body {
 
 .hero {
   min-height: 100vh;
+  display: -ms-grid;
   display: grid;
   place-items: center;
 }
@@ -274,10 +312,14 @@ body {
 
 .about-us img {
   border: 9px solid #faf9f9;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .about-us img:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
   transform: scale(1.01);
 }
 
@@ -295,12 +337,17 @@ body {
   padding: 15px;
   margin-bottom: 25px;
   cursor: pointer;
+  -webkit-box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
 .services .card:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
 
@@ -383,6 +430,8 @@ body {
   padding: 1px 10px;
   font-weight: 400;
   text-transform: capitalize;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
@@ -412,6 +461,8 @@ body {
   padding: 15px 5px;
   color: #fff;
   background-color: rgba(44, 43, 70, 0.8);
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
   transition: 0.5s linear;
   opacity: 0;
 }
@@ -498,11 +549,15 @@ img {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .team-info {
   height: 60px;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -526,6 +581,8 @@ img {
 .team .social-icons i {
   padding: 10px 2px;
   color: #fff;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -543,9 +600,13 @@ img {
 }
 
 .client-logos img {
+  -webkit-transform: scale(1.45);
+  -ms-transform: scale(1.45);
   transform: scale(1.45);
   opacity: 0.3;
   cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -563,7 +624,10 @@ img {
 .pricing .card {
   color: var(--fg-clr-three);
   text-align: center;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 0 3px 0px 0 rgba(65, 62, 102, 0.08);
   box-shadow: 0 3px 0px 0 rgba(65, 62, 102, 0.08);
   padding: 0 0 15px;
   margin-bottom: 25px;
@@ -576,6 +640,8 @@ img {
   width: 0;
   height: 4px;
   background-color: var(--fg-clr-one);
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -584,6 +650,8 @@ img {
 }
 
 .pricing .card:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
 .price {
@@ -628,6 +696,8 @@ img {
   width: 50%;
   margin: auto;
   margin-bottom: 25px;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -659,12 +729,16 @@ img {
 }
 
 .question-body {
+  -webkit-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
   transition: 2s ease-in-out;
   display: none;
 }
 
 .question-body p {
   padding-bottom: 20px;
+  -webkit-transition: 3s ease-in-out;
+  -o-transition: 3s ease-in-out;
   transition: 3s ease-in-out;
 }
 
@@ -705,11 +779,15 @@ img {
   color: #fff;
   cursor: pointer;
   visibility: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   z-index: 999;
 }
 
 .scroll-to-top:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
 
@@ -758,6 +836,8 @@ footer ul li {
 
 footer ul a {
   color: inherit;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -775,6 +855,8 @@ footer ul a:hover {
   text-align: center;
   line-height: 13px;
   border-radius: 50%;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   color: #fff;
   background-color: var(--fg-clr-one);
