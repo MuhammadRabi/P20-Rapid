@@ -15,6 +15,7 @@ function scrollToSection(element) {
       window.scrollTo({
         left: 0,
         top: position,
+        behavior: "smooth",
       });
     });
   });
