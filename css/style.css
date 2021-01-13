@@ -617,12 +617,35 @@ img {
 /* start our clients section */
 
 @media (max-width: 576px) {
-  .questions .section-main-text h2 {
-    font-size: 27px;
-  }
-
   .question-head p {
     font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .testimonials img {
+    margin: 0 30%;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: -5px;
+  }
+
+  .testimonials {
+    text-align: center;
+  }
+
+  .section-main-text {
+    width: 80%;
+  }
+
+  .card .btn {
+    padding: 7px 15px;
+  }
+
+  .questions .section-main-text h2 {
+    font-size: 27px;
   }
 }
 
