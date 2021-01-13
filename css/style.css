@@ -616,6 +616,16 @@ img {
 
 /* start our clients section */
 
+@media (max-width: 576px) {
+  .questions .section-main-text h2 {
+    font-size: 27px;
+  }
+
+  .question-head p {
+    font-size: 14px;
+  }
+}
+
 /* start pricing section */
 .pricing {
   background-color: var(--bg-clr-one);
