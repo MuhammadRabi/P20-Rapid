@@ -251,6 +251,7 @@ nav {
   text-transform: uppercase;
 }
 
+.nav-links a.active,
 .nav-links a:hover {
   color: var(--fg-clr-one);
   text-decoration: none;
@@ -622,6 +623,10 @@ img {
     letter-spacing: 1px;
   }
 
+  .answer-btns i {
+    font-size: 14px;
+  }
+
   .testimonials img {
     margin: 0 30%;
   }
@@ -641,7 +646,7 @@ img {
   }
 
   .card .btn {
-    padding: 7px 15px;
+    padding: 7px 10px;
   }
 
   .questions .section-main-text h2 {
@@ -756,9 +761,14 @@ img {
 }
 
 .answer-btns {
-  color: #000;
+  color: transparent;
   background-color: transparent;
   margin-left: 90%;
+  cursor: pointer;
+}
+
+.answer-btns i {
+  color: var(--fg-clr-two);
 }
 
 .question-body {

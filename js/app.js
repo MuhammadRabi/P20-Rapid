@@ -4,10 +4,18 @@
 const navLinks = document.querySelectorAll(".nav-links a");
 const navbar = document.getElementById("nav");
 
-function scrollToSection(element) {
-  element.forEach((link) => {
+function scrollToSection(ele) {
+  ele.forEach((link) => {
+    // to remove previously active  ele.classList.add("active");
+
     link.addEventListener("click", (e) => {
       e.preventDefault();
+      // make sure to remove any selected nav items
+      navLinks.forEach((mylink) => {
+        mylink.classList.remove("active");
+      });
+      link.classList.add("active");
+
       const navHeight = navbar.getBoundingClientRect().height;
       const element = document.querySelector(e.target.dataset.link);
       let position = element.offsetTop - navHeight;
