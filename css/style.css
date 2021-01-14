@@ -263,7 +263,7 @@ body {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -618,6 +618,19 @@ img {
 /* start our clients section */
 
 @media (max-width: 576px) {
+  .hero-text {
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .head-img {
+    margin: 15px 0 5px;
+  }
+
   .question-head p {
     font-size: 14px;
     letter-spacing: 1px;
@@ -871,6 +884,7 @@ footer p:first-of-type {
 footer ul {
   margin: 0;
   padding: 0;
+  margin-bottom: 28px;
 }
 
 footer ul li {
@@ -887,6 +901,10 @@ footer ul a {
 footer ul a:hover {
   color: var(--fg-clr-one);
   text-decoration: none;
+}
+
+footer .footer-social-icons {
+  padding-top: 20px;
 }
 
 .footer-social-icons i {
@@ -925,6 +943,11 @@ textarea {
   margin: 7px 0;
   padding: 10px 10px;
   border: 1px solid #e7e5e5;
+}
+
+.newsletter p {
+  padding-bottom: 15px;
+  line-height: 1.7;
 }
 
 /*End footer */

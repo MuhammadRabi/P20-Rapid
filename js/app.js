@@ -54,6 +54,9 @@ function goUp() {
     top: 0,
     behavior: "smooth",
   });
+  navLinks.forEach((mylink) => {
+    mylink.classList.remove("active");
+  });
 }
 
 // fixed navbar
