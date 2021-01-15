@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- animate css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- aos css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- swiper slider css-->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- font awesome-->
@@ -47,13 +47,13 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6">
-            <div class="hero-text">
+            <div class="hero-text" data-aos="fade-right">
               <h1>A quick practice for your <span>evolution!</span></h1>
               <button class="btn">get started</button>
             </div>
           </div>
           <div class="col-12 col-md-6">
-            <div class="head-img">
+            <div class="head-img" data-aos="fade-left">
               <img src="img/png/undraw_Devices_re_dxae.svg" class="img-container" alt="pic" />
             </div>
           </div>
@@ -63,7 +63,7 @@
   </header>
   <!-- end header-->
   <!-- start about us section-->
-  <section class="about-us wow bounceInUp" data-wow-duration="5s">
+  <section class="about-us" data-aos="fade-up-right">
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
@@ -112,8 +112,8 @@
   </section>
   <!-- end about us section-->
   <!-- start service section-->
-  <section class="services">
-    <div class="container wow bounceInUp">
+  <section class="services" data-aos="zoom-in">
+    <div class="container">
       <div class="section-main-text">
         <h2>services</h2>
         <p>
@@ -218,7 +218,7 @@
       </div>
     </div>
   </section>
-  <section class="call-to-action">
+  <section class="call-to-action" data-aos="zoom-in-down">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-8 text-lg-left text-center">
@@ -238,10 +238,10 @@
   <section class="features">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-6 col-12" data-aos="fade-up-left">
           <img src="./img/features-1.svg" class="img-container" alt="feat-1" />
         </div>
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-6 col-12" data-aos="fade-up-right">
           <div class="feat-text-box">
             <h3>Lorem ipsum dolor sit, amet consectetur adipisicing</h3>
             <p>
@@ -259,7 +259,7 @@
       </div>
       <div class="row">
         <div class="col-lg-6 col-12">
-          <div class="feat-text-box">
+          <div class="feat-text-box" data-aos="fade-up-right">
             <h3>Lorem ipsum dolor sit, amet consectetur adipisicing</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A
@@ -274,14 +274,14 @@
           </div>
         </div>
         <div class="col-lg-6 col-12">
-          <img src="./img/features-2.svg" class="img-container" alt="feat-1" />
+          <img src="./img/features-2.svg" class="img-container" alt="feat-1" data-aos="fade-up-left" />
         </div>
       </div>
     </div>
   </section>
   <!-- end why choose us section-->
   <!-- start our portofolio section-->
-  <section class="our-portofolio">
+  <section class="our-portofolio" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
       <div class="section-main-text">
         <h2>our portofolio</h2>
@@ -421,7 +421,7 @@
   </section>
   <!-- end our portofolio section-->
   <!-- start testimonials section-->
-  <section class="testimonials">
+  <section class="testimonials" data-aos="fade-right">
     <div class="container">
       <div class="section-main-text">
         <h2>Testimonials</h2>
@@ -489,7 +489,7 @@
   </section>
   <!-- end testimonials section-->
   <!-- start Team section-->
-  <section class="team">
+  <section class="team" data-aos="fade-up" data-aos-duration="1500">
     <div class="container">
       <div class="section-main-text">
         <h2>Team</h2>
@@ -609,7 +609,7 @@
   </section>
   <!-- end our clients section-->
   <!-- start pricing section-->
-  <section class="pricing">
+  <section class="pricing" data-aos="fade-up" data-aos-duration="1500">
     <div class="container">
       <div class="section-main-text">
         <h2>pricing</h2>
@@ -676,7 +676,7 @@
   </section>
   <!-- end pricing section-->
   <!-- start frequently asked section-->
-  <section class="faq">
+  <section class="faq" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
       <div class="questions">
         <div class="section-main-text">
@@ -963,10 +963,8 @@
   <div class="scroll-to-top">
     <span><i class="fas fa-angle-double-up"></i></span>
   </div>
-  <!-- wow js-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-    crossorigin="anonymous"></script>
+  <!-- aos animate-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- swiper slider-->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/app.js"></script>

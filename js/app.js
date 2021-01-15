@@ -149,5 +149,4 @@ var swiper = new Swiper(".swiper-container", {
   },
 });
 
-// wow js
-new WOW().init();
+AOS.init();
