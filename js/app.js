@@ -11,7 +11,7 @@ function scrollToSection(ele) {
     link.addEventListener("click", (e) => {
       e.preventDefault();
       // make sure to remove any selected nav items
-      navLinks.forEach((mylink) => {
+      ele.forEach((mylink) => {
         mylink.classList.remove("active");
       });
       link.classList.add("active");
