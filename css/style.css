@@ -927,6 +927,9 @@ footer .footer-social-icons {
   background-color: var(--bg-clr-btn-hover);
 }
 
+input {
+  outline: none;
+}
 .newsletter input[type="email"] {
   width: 63%;
   margin: 5px 0;
