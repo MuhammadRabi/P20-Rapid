@@ -79,16 +79,9 @@ section {
 
 .navbar-center {
   width: 90vw;
-  max-width: 1170px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -149,10 +142,10 @@ nav {
 
 .nav-white {
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+
   width: 100%;
+  top: 0;
+  left: 0;
   -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
   background-color: #fff;
@@ -264,7 +257,6 @@ body {
 
 .hero {
   min-height: 80vh;
-  display: -ms-grid;
   display: grid;
   place-items: center;
 }
@@ -475,6 +467,8 @@ body {
 /* end our-portofolio section */
 
 /* start testimonials section */
+.testimonials {
+}
 
 .testimonials img {
   border-radius: 50%;
@@ -512,6 +506,7 @@ body {
 
 .swiper-container {
   min-height: 250px;
+  overflow: hidden;
 }
 
 .swiper-pagination-bullet-active {

@@ -33,7 +33,6 @@ function scrollToSection(ele) {
 scrollToSection(navLinks);
 
 // scroll to top btn
-
 const scrollToTop = document.querySelector(".scroll-to-top");
 
 window.addEventListener("scroll", showScrollBtn);
