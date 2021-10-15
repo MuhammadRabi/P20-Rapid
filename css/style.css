@@ -759,6 +759,10 @@ img {
   border-bottom: 1px solid #f6f4f4;
 }
 
+.question button {
+  outline: none;
+}
+
 .question-head p {
   font-size: 18px;
   letter-spacing: 1px;
