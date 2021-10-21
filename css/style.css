@@ -666,6 +666,8 @@ img {
 }
 
 .pricing .card {
+  max-width: 300px;
+  margin: 25px auto;
   color: var(--fg-clr-three);
   text-align: center;
   -webkit-transition: 0.5s ease-in-out;
@@ -674,7 +676,6 @@ img {
   -webkit-box-shadow: 0 3px 0px 0 rgba(65, 62, 102, 0.08);
   box-shadow: 0 3px 0px 0 rgba(65, 62, 102, 0.08);
   padding: 0 0 15px;
-  margin-bottom: 25px;
 }
 
 .pricing .card:before {
