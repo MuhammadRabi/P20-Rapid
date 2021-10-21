@@ -800,25 +800,7 @@ img {
 }
 
 .show-answer .question-body {
-  height: 120px;
-}
-
-@media (max-width: 576px) {
-  .show-answer .question-body {
-    height: 335px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .show-answer .question-body {
-    height: 240px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .show-answer .question-body {
-    height: 160px;
-  }
+  height: fit-content;
 }
 
 .show-answer .minus-icon {
