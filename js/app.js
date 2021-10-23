@@ -96,11 +96,11 @@ questionBox.forEach((question) => {
   // function
   function dropAnswer() {
     // loop to close any answer opened when open an answer
-    questionBox.forEach((item) => {
-      if (item !== question) {
-        item.classList.remove("show-answer");
-      }
-    });
+    // questionBox.forEach((item) => {
+    // if (item !== question) {
+    //   item.classList.remove("show-answer");
+    // }
+    //    });
     question.classList.toggle("show-answer");
   }
 });
