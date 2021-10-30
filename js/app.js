@@ -149,3 +149,28 @@ var swiper = new Swiper(".swiper-container", {
 });
 
 AOS.init();
+
+// increasing stats number
+
+let nums = document.querySelectorAll(".why-choose-us span");
+let section = document.querySelector(".why-choose-us");
+let started = false; // Function Started ? No
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= section.offsetTop - 300) {
+    if (!started) {
+      nums.forEach((num) => startCount(num));
+    }
+    started = true;
+  }
+});
+
+function startCount(el) {
+  let goal = el.dataset.stats;
+  let count = setInterval(() => {
+    el.textContent++;
+    if (el.textContent == goal) {
+      clearInterval(count);
+    }
+  }, 2000 / goal);
+}
