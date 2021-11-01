@@ -84,28 +84,31 @@ function showNav() {
 
 // FAQ section functionality
 
-const questionBox = document.querySelectorAll(".question");
+let accordionHeaders = document.querySelectorAll(".accordion-item-header");
 
-// inside the loop
+accordionHeaders.forEach((accordionHeader) => {
+  accordionHeader.addEventListener("click", () => {
+    let activeAccordionHeader = document.querySelector(
+      ".accordion-item-header.active"
+    );
+    // if another accordion body is open and not the one I click, it will be closed.
+    if (activeAccordionHeader && activeAccordionHeader !== accordionHeader) {
+      activeAccordionHeader.classList.toggle("active");
+      activeAccordionHeader.nextElementSibling.style.maxHeight = 0;
+    }
 
-questionBox.forEach((question) => {
-  let answerBtn = question.querySelector(".answer-btns");
-  // eventlistener
-  answerBtn.addEventListener("click", dropAnswer);
-
-  // function
-  function dropAnswer() {
-    // loop to close any answer opened when open an answer
-    // questionBox.forEach((item) => {
-    // if (item !== question) {
-    //   item.classList.remove("show-answer");
-    // }
-    //    });
-    question.classList.toggle("show-answer");
-  }
+    // expanding and collapsing accordion on click
+    const accordionItemBody = accordionHeader.nextElementSibling;
+    accordionHeader.classList.toggle("active");
+    if (accordionHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    } else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+  });
 });
 
-// filterring image portofolio gallery
+// filtering image portofolio gallery
 const listItems = document.querySelectorAll(".portofolio-filter li");
 const allimages = document.querySelectorAll(".porto-image");
 
