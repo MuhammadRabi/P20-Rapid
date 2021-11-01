@@ -762,52 +762,44 @@ img {
   outline: none;
 }
 
-.question-head p {
+.accordion {
+  margin: 75px auto;
+}
+.accordion-item {
+  margin-bottom: 25px;
+}
+
+.accordion-item-header {
+  position: relative;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+.accordion-item-header.active {
+  color: var(--fg-clr-one);
+}
+.accordion-item-header p {
   font-size: 18px;
   letter-spacing: 1px;
-}
-
-.minus-icon {
-  display: none;
-}
-
-.answer-btns {
-  color: transparent;
-  background-color: transparent;
-  margin-left: 90%;
   cursor: pointer;
 }
-
-.answer-btns i {
-  color: var(--fg-clr-two);
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 36px;
+  position: absolute;
+  right: -8px;
+  top: -10px;
 }
-
-.question-body {
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
   transition: max-height 0.5s ease-in-out;
   max-height: 0;
   overflow: hidden;
 }
 
-.question-body p {
+.accordion-item-body p {
   padding-bottom: 20px;
-}
-
-/* collapsed answer logic */
-
-.show-answer .question-head p {
-  color: var(--fg-clr-one);
-}
-
-.show-answer .question-body {
-  max-height: 200px;
-}
-
-.show-answer .minus-icon {
-  display: inline-block;
-}
-
-.show-answer .plus-icon {
-  display: none;
 }
 
 /* end FAQ */
