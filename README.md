@@ -1,13 +1,18 @@
 # Rapid
 
-training mock up Rapid Template
+### training Rapid Template
 
-##
+## swiper js slider
 
-# swiper js slider
+## Aos js animation
 
-# Aos js animation
-
-# bootstrap 4.5
+## bootstrap 4.5
 
 only for grid
+
+### Built with
+
+- HTML5
+- javaScript
+
+![Full page](/img/rapid.png)
