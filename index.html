@@ -34,12 +34,12 @@
           <span class="close-links"><i class="fas fa-times"></i></span>
         </div>
         <ul class="nav-links">
-          <li><a href="#" data-link=".home">home</a></li>
-          <li><a href="#" data-link=".about-us">about us</a></li>
-          <li><a href="#" data-link=".services">services</a></li>
-          <li><a href="#" data-link=".our-portofolio">portofolio</a></li>
-          <li><a href="#" data-link=".team">team</a></li>
-          <li><a href="#" data-link=".copyrights">contact us</a></li>
+          <li><a href="#" aria-label="home section" data-link=".home">home</a></li>
+          <li><a href="#" aria-label="about us section" data-link=".about-us">about us</a></li>
+          <li><a href="#" aria-label="services section" data-link=".services">services</a></li>
+          <li><a href="#" aria-label="portfolio section" data-link=".our-portofolio">portofolio</a></li>
+          <li><a href="#" aria-label="team section" data-link=".team">team</a></li>
+          <li><a href="#" aria-label="copyrights banner" data-link=".copyrights">contact us</a></li>
         </ul>
       </div>
     </nav>
@@ -780,10 +780,11 @@
                   Necessitatibus, eos commodi aliquid reiciendis eveniet
                   eligendi pariatur praesentium quod minus, in repellat
                 </p>
-                <form method="post">
-                  <input type="email" name="email" />
-                  <input type="submit" value="subscribe" class="btn" />
-                </form>
+                <!-- <form method="post">
+                  <label for="email">email</label>
+                  <input type="email" id="email" name="email" />
+                  <button type="submit" value="subscribe" class="btn">
+                </form> -->
               </div>
             </div>
             <div class="col-sm-6">
@@ -806,29 +807,34 @@
                 <p><strong>Phone:</strong> +1 5589 55488 55</p>
                 <p><strong>Email:</strong> info@example.com</p>
               </div>
-              <div class="footer-social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-behance"></i></a>
-              </div>
+              <nav role="navigation" aria-label="Social Media Links" class="footer-social-icons">
+                <a href="#" aria-label="facebook social icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="twitter social icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="github social icon"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="behance social icon"><i class="fab fa-behance"></i></a>
+              </nav>
             </div>
           </div>
         </div>
         <!-- footer second half-->
         <div class="col-lg-6">
           <div class="send-us">
-            <h5>send us message</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex enim
-              odit, sunt nulla dolores explicabo.
-            </p>
+            <div class="intro">
+              <h5>send us message</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex enim
+                odit, sunt nulla dolores explicabo.
+              </p>
+            </div>
             <form method="post">
-              <input type="text" name="name" placeholder="your name" />
-              <input type="email" name="email" placeholder="your email" />
-              <input type="text" name="subject" placeholder="subject" />
-              <textarea name="message" rows="5" placeholder="message"></textarea>
-              <div class="validate"></div>
+              <label for="name">name</label>
+              <input type="text" name="name" id="name" placeholder="your name" />
+              <label for="email">email</label>
+              <input type="email" name="email" id="email" placeholder="your email" />
+              <label for="subject">subject</label>
+              <input type="text" name="subject" id="subject" placeholder="subject" />
+              <label for="message">message</label>
+              <textarea name="message" rows="5" id="message" placeholder="message"></textarea>
             </form>
             <div class="text-center">
               <button type="submit" title="Send Message" class="btn">
